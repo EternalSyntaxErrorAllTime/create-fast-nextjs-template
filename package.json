@@ -1,0 +1,68 @@
+{
+  "name": "create-fast-nextjs-template",
+  "version": "0.1.0",
+  "description": "A small template for a quick start of the project",
+  "license": "MIT",
+  "private": false,
+  "type": "module",
+  "author": {
+    "name": "EternalSyntaxError",
+    "telegram": "@HiraiKaoTsi"
+  },
+  "repository": {
+    "url": "git+https://github.com/EternalSyntaxErrorAllTime",
+    "type": "git"
+  },
+  "keywords": [
+    "pattern",
+    "react",
+    "nextjs",
+    "typescript",
+    "quick-layout",
+    "quick-template",
+    "website",
+    "nextjs-template"
+  ],
+  "scripts": {
+    "dev": "next dev --turbopack --experimental-https",
+    "build": "next build --turbopack",
+    "start": "next start",
+    "lint": "eslint"
+  },
+  "dependencies": {
+    "@auth/typeorm-adapter": "^2.10.0",
+    "@emotion/cache": "^11.14.0",
+    "@emotion/react": "^11.14.0",
+    "@emotion/styled": "^11.14.1",
+    "@mui/icons-material": "^7.3.4",
+    "@mui/material": "^7.3.4",
+    "@mui/material-nextjs": "^7.3.3",
+    "@reduxjs/toolkit": "^2.9.1",
+    "@tanstack/react-query": "^5.90.2",
+    "ky": "^1.11.0",
+    "next": "15.5.4",
+    "next-auth": "^4.24.11",
+    "notistack": "^3.0.2",
+    "react": "19.1.0",
+    "react-dom": "19.1.0",
+    "react-redux": "^9.2.0",
+    "reflect-metadata": "^0.2.2",
+    "server-only": "^0.0.1",
+    "typeorm": "^0.3.27",
+    "zod": "^4.1.12"
+  },
+  "devDependencies": {
+    "@emnapi/runtime": "^1.5.0",
+    "@eslint/eslintrc": "^3",
+    "@svgr/webpack": "^8.1.0",
+    "@tanstack/react-query-devtools": "^5.90.2",
+    "@types/node": "^20",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "eslint": "^9",
+    "eslint-config-next": "15.5.4",
+    "sass": "^1.93.2",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.9.3"
+  }
+}

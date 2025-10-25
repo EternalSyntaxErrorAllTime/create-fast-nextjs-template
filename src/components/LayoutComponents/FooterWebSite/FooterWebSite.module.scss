@@ -1,0 +1,128 @@
+:root {
+  --color-element: white;
+}
+
+.FooterWebSite {
+  margin-top: auto;
+
+  padding: 18px 25px 10px 25px;
+  box-sizing: border-box;
+
+  .links {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+
+  .container {
+    height: auto;
+
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: auto 1fr;
+    gap: 8px 50px;
+    align-items: start;
+    grid-template-areas:
+      "info socialData"
+      "copyright copyright";
+
+    @media (max-width: 900px) {
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr;
+      gap: 15px;
+      align-items: start;
+      grid-template-areas:
+        "info"
+        "socialData"
+        "copyright";
+    }
+  }
+
+  .info {
+    grid-area: info;
+
+    * {
+      color: var(--color-element);
+    }
+
+    .logo {
+      color: var(--color-element);
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      gap: 10px;
+      flex-wrap: nowrap;
+      white-space: nowrap;
+
+      @media (max-width: 600px) {
+        * {
+          font-size: 0.98rem;
+        }
+      }
+
+      svg {
+        width: 28px;
+        height: 28px;
+
+        @media (max-width: 1200px) {
+          width: 26px;
+          height: 26px;
+        }
+
+        @media (max-width: 600px) {
+          width: 24px;
+          height: 24px;
+        }
+
+        path {
+          fill: var(--color-element);
+        }
+      }
+    }
+  }
+
+  .socialData {
+    grid-area: socialData;
+    margin-left: auto;
+    * {
+      color: var(--color-element);
+    }
+
+    @media (max-width: 900px) {
+      margin-left: 0px;
+    }
+  }
+
+  .info,
+  .socialData {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    flex-wrap: nowrap;
+    white-space: nowrap;
+    @media (max-width: 900px) {
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+
+    @media (max-width: 600px) {
+      font-size: 0.98rem;
+    }
+  }
+
+  .copyright {
+    grid-area: copyright;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+
+    @media (max-width: 600px) {
+      flex-direction: column;
+      gap: 2px;
+      font-size: 0.95rem;
+    }
+  }
+}

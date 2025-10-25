@@ -1,0 +1,41 @@
+body {
+  font-family: var(--font-roboto);
+  display: flex;
+  flex-direction: column;
+
+  main {
+    display: flex;
+    min-height: 100vh;
+
+    padding: 90px 160px 50px 160px;
+
+    @media (max-width: 1536px) {
+      padding: 90px 130px 50px 130px;
+    }
+
+    @media (max-width: 1200px) {
+      padding: 90px 90px 50px 90px;
+    }
+
+    @media (max-width: 900px) {
+      padding: 85px 70px 40px 70px;
+    }
+
+    @media (max-width: 600px) {
+      padding: 80px 50px 40px 50px;
+    }
+
+    @media (max-width: 550px) {
+      padding: 75px 25px 40px 25px;
+    }
+    @media (max-width: 450px) {
+      padding: 75px 15px 40px 15px;
+    }
+  }
+
+  *,
+  button,
+  input {
+    font-family: var(--font-roboto);
+  }
+}

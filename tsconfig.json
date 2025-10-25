@@ -1,0 +1,50 @@
+{
+  "compilerOptions": {
+    "target": "ES2017",
+    "lib": ["dom", "dom.iterable", "esnext"],
+    "allowJs": true,
+    "skipLibCheck": true,
+    "strict": true,
+    "noEmit": true,
+    "esModuleInterop": true,
+    "module": "esnext",
+    "moduleResolution": "bundler",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "jsx": "preserve",
+    "incremental": true,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "plugins": [{ "name": "next" }],
+    "baseUrl": ".",
+    "paths": {
+      // public
+      "@icons/*": ["public/icons/*"],
+      "@image/*": ["public/image/*"],
+
+      // src
+      "@api/*": ["src/app/api/*"],
+      "@components/*": ["src/components/*"],
+      "@hooks": ["src/hooks/index.ts"],
+      "@redux/*": ["src/redux/*"],
+      "@styles/*": ["src/styles/*"],
+      "@utils/*": ["src/utils/*"],
+
+      // server-action
+      "@database/*": ["src/server-action/database/*"],
+
+      // special-element
+      "@ImageComp": ["src/components/Image.tsx"],
+      "@zod": ["./zod-settings.ts"],
+      "@auth": ["./src/app/api/auth/[...nextauth]/auth.config.ts"]
+    }
+  },
+  "include": [
+    "next-env.d.ts",
+    "**/*.ts",
+    "**/*.tsx",
+    ".next/types/**/*.ts",
+    "declare.types.ts"
+  ],
+  "exclude": ["node_modules"]
+}
